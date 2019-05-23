@@ -7,14 +7,12 @@ import androidx.room.ForeignKey.CASCADE
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "book_table",
-    foreignKeys = arrayOf(
-        ForeignKey(
-            entity = Tags::class,
-            parentColumns = arrayOf("id"),
-            childColumns = arrayOf("idTags"),
-            onDelete = CASCADE
-        )
-    )
+    foreignKeys = [ForeignKey(
+        entity = Tags::class,
+        parentColumns = arrayOf("id"),
+        childColumns = arrayOf("idTags"),
+        onDelete = CASCADE
+    )]
 )
 data class Book(
     @PrimaryKey
