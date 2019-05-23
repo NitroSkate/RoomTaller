@@ -7,7 +7,7 @@ import androidx.room.Query
 import com.example.taller4_pdm_ca.pojos.BookxTags
 
 @Dao
-interface BookxTags{
+interface BookxTagsDao{
 
     @Insert
     suspend fun insert(bookxTags: BookxTags)
