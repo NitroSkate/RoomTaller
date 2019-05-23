@@ -1,5 +1,5 @@
 package com.example.taller4_pdm_ca.dao
-/*
+
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
@@ -13,4 +13,4 @@ interface AuthorDao {
 
     @Query("SELECT * FROM author_table")
     fun getAllAuthors(): LiveData<List<Author>>
-}*/
+}

@@ -6,7 +6,7 @@ import androidx.room.ForeignKey
 import androidx.room.ForeignKey.CASCADE
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "book_table")/*,
+@Entity(tableName = "book_table",
     foreignKeys = arrayOf(
         ForeignKey(
             entity = Tags::class,
@@ -15,7 +15,7 @@ import androidx.room.PrimaryKey
             onDelete = CASCADE
         )
     )
-)*/
+)
 data class Book(
     @PrimaryKey
     val id: String,
@@ -28,9 +28,9 @@ data class Book(
     @ColumnInfo(name = "Synopsis")
     val synopsis : String,
     @ColumnInfo(name = "ISBN")
-    val isbn : String/*,
+    val isbn : String,
     @ColumnInfo(name = "idTags")
-    val idTags: Int*/
-    /*@ColumnInfo(name = "fav")
-    val fav : Boolean*/
+    val idTags: Int,
+    @ColumnInfo(name = "fav")
+    val fav : Int
 )

@@ -2,7 +2,7 @@ package com.example.taller4_pdm_ca.pojos
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
-/*
+
 @Entity(tableName = "author_book_table",
     primaryKeys = ["idAuthor", "idBook"],
     foreignKeys = [ForeignKey(entity = Author::class,
@@ -17,4 +17,4 @@ import androidx.room.ForeignKey
 data class AuthorxBook(
     var idAuthor: Int,
     var idBook: Int
-)*/
+)

@@ -5,7 +5,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import com.example.taller4_pdm_ca.pojos.Tags
- /*
+
 @Dao
 interface TagsDao{
 
@@ -14,4 +14,4 @@ interface TagsDao{
 
     @Query("SELECT * FROM tags_table")
     fun getAllTags() : LiveData<List<Tags>>
-}*/
+}
